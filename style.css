@@ -34,6 +34,7 @@ body{
 .block:hover{
     transform: translateY(-5px);
     transition: 1s;
+    box-shadow: skyblue 0px 0px 40px;
 }
 
 .block a{
@@ -43,7 +44,7 @@ body{
     font-size: 100%;
     padding: 0px;
     margin: 0px;
-
+;
 }
 .block a:hover{
     color: darkblue;
@@ -73,10 +74,72 @@ a{
 }
 a:hover{
     transform: translate(0px,-5px);
-    color: lightgreen;
+    color: color-mix(in srgb, lightgreen 40%, rgb(0, 191, 255) 60%);
     transition:  1.5s;
 }
 
-.Burger{
+#menu-toggle{
+    display: none;
+}
 
+@media(min-width: 1100px){
+    .burger{
+        display: none;
+    }
+    .close{
+        display: none;
+    }
+
+}
+@media(max-width: 1100px){
+    .nav-bar{
+        display: none;
+    }
+    .Headline{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .burger{
+        position: absolute;
+        top: 18px;
+        right: 24px;
+        color: white;
+        font-size: 2em;
+        cursor: pointer;
+    }
+   .close{
+        position: absolute;
+        top: 18px;
+        right: 50px;
+        color: white;
+        font-size: 2em;
+        cursor: pointer;
+    }
+    #menu-toggle:checked ~ .infoblock{
+        display: none;
+    }
+    #menu-toggle:checked ~ .nav-bar{
+        opacity: 1;
+        pointer-events: all;
+    }
+    .nav-bar{
+        transform: scale(100%);
+        transition: 1s;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #222;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        opacity: 0;
+        pointer-events: none;
+    }
 }
