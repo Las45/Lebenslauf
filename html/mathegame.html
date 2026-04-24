@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mathe Game</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Rechenspiel</h1>
+        <div class="type" style="margin: 10px;">
+            <button onclick="set_plus()">+</button>
+            <button onclick="set_minus()">-</button>
+            <button onclick="set_random()">Random</button>
+        </div>
+        <div class="Guess">
+            <label id="calculation">Rechnung</label>
+            <br>
+            <input type="number" id="input"/>
+            <button id="startButton" onclick="guess()">Guess</button>
+            <p id="output"></p>
+        </div>
+        <script src="java.js"></script>
+    </body>
+</html>
