@@ -1,0 +1,23 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+}
+
+a{
+    position:absolute;
+    top: 20px;
+    left: 10px;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: 0px 10px;
+    padding: 5px 10px;
+    font-size: 120%;
+    transition: 1s;
+}
+a:hover{
+    transform: translate(0px,-5px);
+    color: color-mix(in srgb, lightgreen 40%, rgb(0, 191, 255) 60%);
+    transition:  1.5s;
+}

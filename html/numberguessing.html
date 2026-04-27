@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,17 +7,20 @@
     <title>Spiel</title>
 </head>
 <body>
-    <h2>Zahlen raten</h2>
-    <p>Versuche die Zahl zu erraten!</p>
-
+    <a href="../index.html">HOME</a>
     <div>
-        <label>Dein Tipp</label>
-        <input type="number" id="inputInput">
-        <button onclick="checkNumber()" id = "btnClick">Überprüfen</button>
-        <button onclick="newGame()">Neu beginnen</button>
-        <p id="outputResult"></p>
-        <p id="outputCount"></p>        
+        <h2>Zahlen raten</h2>
+        <p>Versuche die Zahl zu erraten!</p>
+        <div>
+            <label>Dein Tipp</label>
+            <input type="number" id="inputInput">
+            <button onclick="checkNumber()" id = "btnClick">Überprüfen</button>
+            <button onclick="newGame()">Neu beginnen</button>
+            <p id="outputResult"></p>
+            <p id="outputCount"></p>        
+        </div>
     </div>
+    
     <script src="../script/script.js"></script>
 </body>
 </html>
